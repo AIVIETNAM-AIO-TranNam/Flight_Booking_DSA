@@ -22,6 +22,16 @@
             + Được hoàn tiền toàn bộ vé: Nếu giờ bay mới không phù hợp với kế hoạch cá nhân (REFUSE)
             + Bảo lưu giá trị vé (KEEP FOR FUTURE)
 # 19/11:
-    Nam: đề xuất build 1 module về quản lí và liên kết các sân bay trong nước và quốc tế (giả sử mỗi nước có 1 sân bay). Để giải quyết 1 số tình huống sau:
+    Nam: đề xuất build 1 module về quản lí và liên kết các sân bay trong nước và quốc tế (giả sử mỗi nước có 1 sân bay). Để giải quyết 1 số tình huống sau: (ƯU TIÊN GIẢI QUYẾT)
         - Khách hàng muốn bay nhiều chuyến nối nhau vì ko có chuyến bay trực tiếp từ sân bay A đến C nên phải từ A->B rồi B->C(quá cảnh) => liên kết hệ thống các sân bay để có thể đặt vé B->C (in advance) từ sân bay A (giảm thời gian chờ)
         - Hãng hàng không thông báo đổi địa điểm hạ cánh TRƯỚC GIỜ BAY (vì lý do thời tiết xấu, an toàn do dọa đánh bom hoặc hệ thống quản lí máy bay ở sân bay muốn đến ban đầu đang bị quá tải, ko đủ không gian cho các máy bay khác đến trong thời gian dự kiến sắp tới)
+# 25/11: 
+    Nam: 
+    - sửa hàm check số lượng ghế còn trống của 1 chuyến bay. Nếu còn chỗ trống thì mới tạo vé
+    Bảo:
+    - thêm phân loại số lượng ghế theo 4 mức vé đối với từng chuyến bay
+    - thêm chuyến bay 2 chiều (cả đi lẫn về)
+    Trọng: 
+    - thêm số lượng vé đặt cho từng chuyến bay mà user lựa chọn
+    Dương:
+    - thêm phần đăng nhập lại cho user khi họ đăng nhập thông tin về username hoặc password sai
