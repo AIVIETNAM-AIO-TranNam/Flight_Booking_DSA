@@ -5,9 +5,9 @@ class BookingEngineModule:
         self.booking_queue = Queue()
         self.waitlist_pq = PriorityQueue()
 
-    def select_seat(self, flight_code, seat_number, username):
+    def select_seat(self, flight_id, seat_number, username):
         booking_request = {
-            "flight_code": flight_code,
+            "flight_id": flight_id,
             "seat_number": seat_number,
             "username": username,
             "status": "Pending"
@@ -15,8 +15,8 @@ class BookingEngineModule:
         self.booking_queue.enqueue(booking_request)
         return booking_request
 
-    def add_to_waitlist(self, username, flight_code, priority_score):
-        self.waitlist_pq.enqueue_with_priority({"username": username, "flight_code": flight_code}, priority_score)
+    def add_to_waitlist(self, username, flight_id, priority_score):
+        self.waitlist_pq.enqueue_with_priority({"username": username, "flight_id": flight_id}, priority_score)
 
     def process_booking_queue(self):
         processed = []

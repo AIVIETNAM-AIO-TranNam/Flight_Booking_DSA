@@ -19,10 +19,10 @@ class SinglyLinkedList:
 
 class HashTable:
     def __init__(self, capacity=100):
-        self.capacity = capacity
+        self.capacity = capacity   #
         self.table = [[] for _ in range(capacity)]
 
-    def _hash(self, key):
+    def _hash(self, key):     #
         return hash(key) % self.capacity
 
     def insert(self, key, value):
@@ -57,7 +57,7 @@ class Queue:
 
 class PriorityQueue:
     def __init__(self):
-        self.heap = []
+        self.heap = [] #heap relates to binary tree
 
     def enqueue_with_priority(self, item, priority):
         self.heap.append((priority, item))
@@ -73,16 +73,17 @@ class PriorityQueue:
         self._heapify_down(0)
         return root
 
-    def _heapify_up(self, i):
-        p = (i - 1) // 2
-        if i > 0 and self.heap[i][0] > self.heap[p][0]:
+    def _heapify_up(self, i): #Moves a high-priority element upward toward the top of the queue. (USE AFTER ADDING A NEW ONE INTO HEAP)
+        p = (i - 1) // 2 #"p" is the index of "i"'s parent
+        if i > 0 and self.heap[i][0] > self.heap[p][0]: # max-heap
             self.heap[i], self.heap[p] = self.heap[p], self.heap[i]
             self._heapify_up(p)
 
-    def _heapify_down(self, i):
+    def _heapify_down(self, i): 
+    #Pushes a lower-priority element down from the root so the next highest-priority item rises to the top. (USE AFTER REMOVING THE ROOT / TOP OF A HEAP, the "bottom/last" item of priority queue are push to the top position ==> heapify down to re-arrange the priority queue)
         largest = i
-        l = 2 * i + 1
-        r = 2 * i + 2
+        l = 2 * i + 1 #index "l" is left child of index "i"
+        r = 2 * i + 2 #index "r" is right child of index "i"
         if l < len(self.heap) and self.heap[l][0] > self.heap[largest][0]:
             largest = l
         if r < len(self.heap) and self.heap[r][0] > self.heap[largest][0]:
@@ -90,3 +91,4 @@ class PriorityQueue:
         if largest != i:
             self.heap[i], self.heap[largest] = self.heap[largest], self.heap[i]
             self._heapify_down(largest)
+        

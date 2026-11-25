@@ -1,41 +1,212 @@
 <mxfile host="65bd71144e">
     <diagram id="I_8B_F6f20sWEOJYw6Oe" name="FlightBookingFlow">
-        <mxGraphModel dx="940" dy="680" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="2507" dy="817" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="-dipeikIIGzyN8Nft1t0-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Terminal CLI (main.py)" vertex="1">
-                    <mxGeometry height="60" width="160" x="480" y="140" as="geometry"/>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-17" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
+                    <mxGeometry height="260" width="405" x="35" y="1240" as="geometry"/>
                 </mxCell>
-                <mxCell id="-dipeikIIGzyN8Nft1t0-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="UserManagerModule" vertex="1">
-                    <mxGeometry height="60" width="160" x="220" y="260" as="geometry"/>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Terminal CLI (main.py)" vertex="1">
+                    <mxGeometry height="60" width="160" x="360" y="650" as="geometry"/>
                 </mxCell>
-                <mxCell id="-dipeikIIGzyN8Nft1t0-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="FlightManagementModule" vertex="1">
-                    <mxGeometry height="60" width="160" x="480" y="260" as="geometry"/>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="UserManagerModule" vertex="1">
+                    <mxGeometry height="60" width="160" x="100" y="770" as="geometry"/>
                 </mxCell>
-                <mxCell id="-dipeikIIGzyN8Nft1t0-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="BookingEngineModule (Queue &amp; PriorityQueue)" vertex="1">
-                    <mxGeometry height="60" width="160" x="740" y="260" as="geometry"/>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="FlightManagementModule" vertex="1">
+                    <mxGeometry height="60" width="160" x="360" y="770" as="geometry"/>
                 </mxCell>
-                <mxCell id="-dipeikIIGzyN8Nft1t0-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="PaymentAndTicketModule" vertex="1">
-                    <mxGeometry height="60" width="160" x="610" y="380" as="geometry"/>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="BookingEngineModule (Queue &amp; PriorityQueue)" vertex="1">
+                    <mxGeometry height="60" width="160" x="620" y="770" as="geometry"/>
                 </mxCell>
-                <mxCell id="-dipeikIIGzyN8Nft1t0-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="HistoryAndManagementModule" vertex="1">
-                    <mxGeometry height="60" width="190" x="320" y="380" as="geometry"/>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="PaymentAndTicketModule" vertex="1">
+                    <mxGeometry height="60" width="160" x="490" y="890" as="geometry"/>
                 </mxCell>
-                <mxCell id="-dipeikIIGzyN8Nft1t0-7" edge="1" parent="1" source="-dipeikIIGzyN8Nft1t0-1" target="-dipeikIIGzyN8Nft1t0-2">
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="HistoryAndManagementModule" vertex="1">
+                    <mxGeometry height="60" width="190" x="200" y="890" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-7" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-1" target="idkHpvVqCj8Mqf6z5PJB-2">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="-dipeikIIGzyN8Nft1t0-8" edge="1" parent="1" source="-dipeikIIGzyN8Nft1t0-1" target="-dipeikIIGzyN8Nft1t0-3">
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-8" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-1" target="idkHpvVqCj8Mqf6z5PJB-3">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="-dipeikIIGzyN8Nft1t0-9" edge="1" parent="1" source="-dipeikIIGzyN8Nft1t0-1" target="-dipeikIIGzyN8Nft1t0-4">
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-9" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-1" target="idkHpvVqCj8Mqf6z5PJB-4">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="-dipeikIIGzyN8Nft1t0-10" edge="1" parent="1" source="-dipeikIIGzyN8Nft1t0-4" target="-dipeikIIGzyN8Nft1t0-5">
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-10" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-4" target="idkHpvVqCj8Mqf6z5PJB-5">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="-dipeikIIGzyN8Nft1t0-11" edge="1" parent="1" source="-dipeikIIGzyN8Nft1t0-5" target="-dipeikIIGzyN8Nft1t0-6">
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-11" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-5" target="idkHpvVqCj8Mqf6z5PJB-6">
                     <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-26" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-12" style="edgeStyle=none;html=1;" target="idkHpvVqCj8Mqf6z5PJB-13" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-38" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-12" style="edgeStyle=none;html=1;" target="idkHpvVqCj8Mqf6z5PJB-15" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="load user from file&amp;nbsp;&lt;br&gt;input: fiile path &quot;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;users.csv&quot;&lt;/span&gt;&lt;br&gt;output: hash table&amp;nbsp;" vertex="1">
+                    <mxGeometry height="60" width="160" x="65" y="1280" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-39" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-13" style="edgeStyle=none;html=1;" target="idkHpvVqCj8Mqf6z5PJB-15" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-13" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;" value="register user&lt;br&gt;input: username, password&lt;br&gt;ouput: hash table" vertex="1">
+                    <mxGeometry height="60" width="120" x="290" y="1280" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-15" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;" value="authenticate user&lt;br&gt;INPUT: username, password&lt;br&gt;OUTPUT: current user" vertex="1">
+                    <mxGeometry height="70" width="120" x="190" y="1390" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-18" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=19;fontStyle=1" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 19px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;UserManagerModule&lt;/span&gt;" vertex="1">
+                    <mxGeometry height="40" width="150" x="132.5" y="1190" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-21" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
+                    <mxGeometry height="260" width="520" x="560" y="1240" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-32" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-22" style="edgeStyle=none;html=1;" target="idkHpvVqCj8Mqf6z5PJB-23" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-34" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-22" style="edgeStyle=none;html=1;entryX=0.374;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="idkHpvVqCj8Mqf6z5PJB-24" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-36" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-22" style="edgeStyle=none;html=1;" target="idkHpvVqCj8Mqf6z5PJB-28" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="load flight from file&lt;br&gt;INPUT: file &quot;flights&quot; (format CSV)&lt;br&gt;OUTPUT: singly linked list" vertex="1">
+                    <mxGeometry height="60" width="160" x="725" y="1260" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-35" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-23" style="edgeStyle=none;html=1;" target="idkHpvVqCj8Mqf6z5PJB-24" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-23" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;" value="add flight&lt;br&gt;INPUT:&amp;nbsp;&lt;br&gt;OUTPUT: singly linked list, add infor into file &quot;flights&quot;" vertex="1">
+                    <mxGeometry height="80" width="130" x="920" y="1250" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-24" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;" value="search flights&lt;br&gt;INPUT: origin, destination, date&lt;br&gt;OUTPUT: list of suitable flights" vertex="1">
+                    <mxGeometry height="80" width="130" x="920" y="1390" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-25" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=17;fontStyle=1" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 17px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;FlightManagementModule&lt;/span&gt;" vertex="1">
+                    <mxGeometry height="40" width="170" x="715" y="1190" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-28" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;" value="sort flights by price&lt;br&gt;INPUT: flights&lt;div&gt;OUTPUT: flights divided by prices (normal / luxurious)&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="70" width="142.5" x="737.5" y="1395" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-37" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-30" style="edgeStyle=none;html=1;" target="idkHpvVqCj8Mqf6z5PJB-28" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-30" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;" value="merge price&lt;br&gt;INPUT: left, right&lt;div&gt;OUTPUT: a list combined by 2 lists&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="575" y="1400" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-40" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
+                    <mxGeometry height="460" width="600" x="200" y="1650" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-67" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-43" style="edgeStyle=none;html=1;" target="idkHpvVqCj8Mqf6z5PJB-45" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="select seat&lt;br&gt;INPUT: flight code, seat number, username&lt;div&gt;OUTPUT: send request &quot;pending&quot; --&amp;gt; queue&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="80" width="170" x="242.5" y="1685" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-68" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-45" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="idkHpvVqCj8Mqf6z5PJB-46" value="">
+                    <mxGeometry relative="1" x="0.0166" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="615" y="1800"/>
+                            <mxPoint x="327.5" y="1800"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-45" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;add to waitlist&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;INPUT: username, flight code, priority score&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;div style=&quot;text-align: justify; color: rgb(63, 63, 63); scrollbar-color: rgba(121, 121, 121, 0.4) rgb(30, 30, 30);&quot;&gt;OUTPUT: wait_list&lt;/div&gt;&lt;div style=&quot;text-align: justify; color: rgb(63, 63, 63); scrollbar-color: rgba(121, 121, 121, 0.4) rgb(30, 30, 30);&quot;&gt;NOTES: after the flight (flight code) is none of available seats, the wait list will be arranged by priority score of tickets (normal / VIP)&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="102.5" width="280" x="475" y="1673.75" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-70" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-46" style="edgeStyle=none;html=1;" target="idkHpvVqCj8Mqf6z5PJB-69" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-46" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;" value="&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;process booking queue&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;INPUT: wait list&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgba(121, 121, 121, 0.4) rgb(30, 30, 30);&quot;&gt;OUTPUT: peek() ---&amp;gt; giữ chỗ before ticket payment ---&amp;gt;&amp;nbsp;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="70" width="142.5" x="256.25" y="1850" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-47" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=19;fontStyle=1;fillColor=none;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Booking Engine Module&lt;/span&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="40" width="220" x="410" y="1610" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-65" edge="1" parent="1" style="edgeStyle=none;html=1;exitX=0.432;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+                    <mxGeometry relative="1" x="-0.74" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="240.04" y="1560"/>
+                            <mxPoint x="510.04" y="1560"/>
+                        </Array>
+                        <mxPoint x="240.00000000000003" y="1500" as="sourcePoint"/>
+                        <mxPoint x="510.04" y="1620" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-66" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-21" style="edgeStyle=none;html=1;exitX=0.523;exitY=0.996;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+                    <mxGeometry relative="1" x="-0.74" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="830" y="1560"/>
+                            <mxPoint x="520" y="1560"/>
+                        </Array>
+                        <mxPoint x="769.96" y="1470" as="sourcePoint"/>
+                        <mxPoint x="520" y="1620" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-73" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-69" style="edgeStyle=none;html=1;" target="idkHpvVqCj8Mqf6z5PJB-72" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-69" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;" value="&lt;div&gt;&quot;divide and sort 2nd wait list&quot;&lt;/div&gt;divide wait list into 2 parts: first for keeping seats successfully and the second for behind waiters&lt;div&gt;---&amp;gt; sort the second list by priority score of tickets&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="102.5" width="200" x="547" y="1833.75" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-71" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="if seats are full (no available)" vertex="1">
+                    <mxGeometry height="30" width="120" x="410" y="1890" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-72" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;" value="re-call &quot;process booking queue&quot;&lt;br&gt;INPUT: the 2nd waitlist&lt;div&gt;OUTPUT: peek()&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="80" width="170" x="562" y="2020" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-74" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="if someone change flight (seats not full)" vertex="1">
+                    <mxGeometry height="30" width="120" x="650" y="1970" as="geometry"/>
+                </mxCell>
+                <mxCell id="3f32lSqJFcGdQU5a7UAZ-6" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-75" style="edgeStyle=none;html=1;" target="3f32lSqJFcGdQU5a7UAZ-5" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-75" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
+                    <mxGeometry height="250" width="405" x="-280" y="1845" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-76" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; font-size: 19px;&quot;&gt;&lt;b&gt;Payment and Ticket Module&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="50" width="300" x="-210" y="1795" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-77" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;generate ticket code&lt;/div&gt;iNPUT: none&lt;br&gt;OUTPUT: random code&amp;nbsp;" vertex="1">
+                    <mxGeometry height="80" width="170" x="-175" y="1995" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-78" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-79" style="edgeStyle=none;html=1;" target="idkHpvVqCj8Mqf6z5PJB-77" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-82" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-79" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="idkHpvVqCj8Mqf6z5PJB-81" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="-90" y="1970"/>
+                            <mxPoint x="360" y="1970"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-79" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;process payment&lt;/div&gt;iNPUT: booking infor, amount&lt;br&gt;OUTPUT: call &quot;generate ticket code&quot;" vertex="1">
+                    <mxGeometry height="80" width="170" x="-175" y="1856.25" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-80" edge="1" parent="1" source="idkHpvVqCj8Mqf6z5PJB-46" style="edgeStyle=none;html=1;" target="idkHpvVqCj8Mqf6z5PJB-79" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="idkHpvVqCj8Mqf6z5PJB-81" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;" value="pop():&lt;div&gt;INPUT: Paid == TRUE&lt;/div&gt;&lt;div&gt;OUTPUT: wait list (delate relevant infor of username)&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="80" width="190" x="265" y="2010" as="geometry"/>
+                </mxCell>
+                <mxCell id="3f32lSqJFcGdQU5a7UAZ-1" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
+                    <mxGeometry height="250" width="307.5" x="-227.5" y="2230" as="geometry"/>
+                </mxCell>
+                <mxCell id="3f32lSqJFcGdQU5a7UAZ-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;view user bookings&amp;nbsp;&lt;/div&gt;iNPUT: username&lt;br&gt;OUTPUT: all booked tickets sorted by username in history linked list" vertex="1">
+                    <mxGeometry height="80" width="170" x="-158.75" y="2380" as="geometry"/>
+                </mxCell>
+                <mxCell id="3f32lSqJFcGdQU5a7UAZ-3" edge="1" parent="1" source="3f32lSqJFcGdQU5a7UAZ-4" style="edgeStyle=none;html=1;" target="3f32lSqJFcGdQU5a7UAZ-2" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3f32lSqJFcGdQU5a7UAZ-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;div&gt;add booking to history&lt;/div&gt;iNPUT: username, ticket_infor&lt;br&gt;OUTPUT: hisotry linked list, save into bookings.csv" vertex="1">
+                    <mxGeometry height="80" width="170" x="-158.75" y="2250" as="geometry"/>
+                </mxCell>
+                <mxCell id="3f32lSqJFcGdQU5a7UAZ-5" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;History and Management Module&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="50" width="300" x="-227.5" y="2190" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

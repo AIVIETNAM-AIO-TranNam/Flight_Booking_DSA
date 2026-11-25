@@ -1,3 +1,5 @@
+import sys
+
 from src.user_manager import UserManagerModule
 from src.flight_manager import FlightManagementModule
 from src.booking_engine import BookingEngineModule
@@ -37,7 +39,6 @@ def main():
             break
         else:
             print("Invalid option!")
-
 def user_menu(user_mgr, flight_mgr, booking_eng, payment_mod, history_mgr):
     while True:
         print(f"\n--- USER MENU ({user_mgr.current_user['username']}) ---")
@@ -55,16 +56,20 @@ def user_menu(user_mgr, flight_mgr, booking_eng, payment_mod, history_mgr):
             sorted_flights = flight_mgr.sort_flights_by_price(flights)
             print(f"Found {len(sorted_flights)} flights (sorted by price):")
             for f in sorted_flights:
-                print(f"Code: {f['flight_code']} | {f['origin']} -> {f['destination']} | Time: {f['departure_time']} | Price: {f['price']} VND | Seats: {f['available_seats']}")
+                print(f"Code: {f['flight_id']} | {f['origin']} -> {f['destination']} | Time: {f['depart_time']} | Price: {f['price']} VND | Seats: {f['available_seats']}")
         elif choice == "2":
             f_code = input("Enter Flight Code: ")
             seat = input("Enter Seat Number (e.g., 12A): ")
             req = booking_eng.select_seat(f_code, seat, user_mgr.current_user["username"])
             processed = booking_eng.process_booking_queue()
-            amount = 1500000
+            flight = flight_mgr.get_flight_by_id(f_code)
+            if flight is None:
+                print("Flight not found")
+                continue
+            amount = flight["price"]
             success, ticket = payment_mod.process_payment(processed[0], amount)
             if success:
-                history_mgr.add_booking_to_history(user_mgr.current_user["username"], {"flight_code": f_code, "seat": seat, "ticket_code": ticket})
+                history_mgr.add_booking_to_history(user_mgr.current_user["username"], {"flight_id": f_code, "seat": seat, "ticket_code": ticket})
                 print(f"Booking successful! Your Ticket Code: {ticket}")
         elif choice == "3":
             bookings = history_mgr.view_user_bookings(user_mgr.current_user["username"])
@@ -73,5 +78,47 @@ def user_menu(user_mgr, flight_mgr, booking_eng, payment_mod, history_mgr):
             user_mgr.current_user = None
             break
 
+
+def run_demo():
+    flight_mgr = FlightManagementModule()
+    booking_eng = BookingEngineModule()
+    payment_mod = PaymentAndTicketModule()
+
+    flight_mgr.load_flights_from_file()
+
+    curr = flight_mgr.flights_list.head
+    flight = None
+    while curr:
+        if curr.data["available_seats"] > 0:
+            flight = curr.data
+            break
+        curr = curr.next
+
+    if flight is None:
+        raise RuntimeError("No flights with available seats were found.")
+
+    request = booking_eng.select_seat(
+        flight["flight_id"], "DEMO-1", "demo_user"
+    )
+    processed = booking_eng.process_booking_queue()
+    if not processed:
+        raise RuntimeError("The booking request was not processed.")
+
+    success, ticket = payment_mod.process_payment(
+        processed[-1], flight["price"]
+    )
+    if not success:
+        raise RuntimeError(f"Demo payment failed: {ticket}")
+
+    print("Demo booking successful!")
+    print(f"Flight: {flight['flight_id']}")
+    print(f"Seat: {request['seat_number']}")
+    print(f"Amount: {flight['price']} VND")
+    print(f"Ticket: {ticket}")
+
+
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1 and sys.argv[1] == "--demo":
+        run_demo()
+    else:
+        main()
