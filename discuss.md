@@ -35,3 +35,17 @@
     - thêm số lượng vé đặt cho từng chuyến bay mà user lựa chọn
     Dương:
     - thêm phần đăng nhập lại cho user khi họ đăng nhập thông tin về username hoặc password sai
+
+# 28/11:
+    Hoàng Gia Bảo:
+        - Cập nhật src/flight_manager.py:
+            + Dùng HashTable ánh xạ mã sân bay viết tắt sang tên đầy đủ từ data/airports.csv.
+            + Phân loại số lượng ghế trống và giá vé thành 4 mức (promotional, economy, flexible, business) trên từng chuyến bay.
+            + Thêm hàm tìm kiếm chuyến bay 2 chiều (search_round_trip) có lọc điều kiện giờ bay về khi đặt khứ hồi trong ngày và hàm trừ ghế theo hạng vé (book_seat_by_class).
+        - Cập nhật src/booking_engine.py:
+            + Bổ sung tham số hạng vé (ticket_class) và loại chuyến (trip_type) khi đặt ghế.
+            + Thêm hàm đặt vé khứ hồi 2 chiều (select_round_trip) đẩy đồng thời cả 2 chặng đi/về vào hàng đợi Queue.
+            + Liên kết điểm ưu tiên theo 4 hạng vé (10/20/30/40) vào PriorityQueue cho danh sách chờ.
+        - Cập nhật main.py:
+            + Hiển thị chi tiết số ghế, giá của 4 mức vé và tên đầy đủ sân bay khi tra cứu.
+            + Bổ sung menu tìm kiếm và đặt vé 2 chiều (áp dụng ưu đãi giảm 5% tổng giá vé khứ hồi và xuất 2 mã vé riêng).
