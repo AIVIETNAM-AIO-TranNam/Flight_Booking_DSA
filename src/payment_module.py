@@ -1,13 +1,21 @@
 import random
 
 class PaymentAndTicketModule:
-    def process_payment(self, booking_info, amount):
-        #cần bổ sung thêm cụ thể booking_info gồm những thông tin gì
-        if amount > 0:
-            ticket_code = self.generate_ticket_code()
-            return True, ticket_code
-        return False, "Payment failed!"
 
+    def process_payment(self, booking_info, amount):
+        if amount <= 0:
+            return False, "Payment failed!"
+
+        quantity = booking_info["quantity"]
+
+        ticket_codes = []
+
+        for _ in range(quantity):
+            ticket_codes.append(self.generate_ticket_code())
+
+        return True, ticket_codes
+
+    
     def generate_ticket_code(self):
         code = "TKT-" #TicKeT
         for _ in range(6):
