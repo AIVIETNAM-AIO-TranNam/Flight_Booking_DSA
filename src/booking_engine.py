@@ -5,10 +5,15 @@ class BookingEngineModule:
         self.booking_queue = Queue()
         self.waitlist_pq = PriorityQueue()
 
-    def select_seat(self, flight_id, seat_number, username):
+    def select_seats(self, flight_id, seat_numbers, username):
+        if not seat_numbers: 
+            raise ValueError("Phải chọn ít nhất 1 ghế")
+        if len(seat_numbers) != len(set(seat_numbers)):
+            raise ValueError("Chỗ ngồi bị trùng")
         booking_request = {
             "flight_id": flight_id,
-            "seat_number": seat_number,
+            "seat_numbers": seat_numbers,
+            "quantity": len(seat_numbers),
             "username": username,
             "status": "Pending"
         }
